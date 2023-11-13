@@ -13,7 +13,7 @@ The `ngx-org-chart` creates hierarchical organization chart.
 You can install the package using following command.
 
 ```sh
-$ npm install ngx-org-chart
+$ npm install @fdjlss/ngx-org-chart
 ```
 
 ## Usage

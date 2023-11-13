@@ -1,6 +1,6 @@
 {
-  "name": "ngx-org-ui",
-  "version": "1.1.0",
+  "name": "@fdjlss/ngx-org-chart",
+  "version": "1.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -49,5 +49,17 @@
     "tsickle": "^0.36.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "description": "The `ngx-org-chart` creates hierarchical organization chart.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdjlss/ngx-org-chart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdjlss/ngx-org-chart/issues"
+  },
+  "homepage": "https://github.com/fdjlss/ngx-org-chart#readme"
 }

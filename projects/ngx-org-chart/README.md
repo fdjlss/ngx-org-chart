@@ -19,13 +19,13 @@ It applies multiple root node. That means you can create multiple organization c
 You can install the package using following command.
 
 ```sh
-$ npm install ngx-org-chart
+$ npm install @fdjlss/ngx-org-chart
 ```
 
 Import below file into style.scss file.
 
-```js
-import '~ngx-org-chart/_theming.scss'
+```scss
+@import '../node_modules/@fdjlss/ngx-org-chart/theming';
 ```
 
 ## Usage

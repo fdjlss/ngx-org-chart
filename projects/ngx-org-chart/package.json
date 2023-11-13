@@ -1,6 +1,6 @@
 {
-  "name": "ngx-org-chart",
-  "version": "1.1.0",
+  "name": "@fdjlss/ngx-org-chart",
+  "version": "1.0.5",
   "description": "Hierarchical Organization Chart",
   "keywords": [
     "org-chart",
@@ -13,20 +13,24 @@
     "angular 8"
   ],
   "author": "Mümin Celal Pinar",
-  "license": "MIT",
+  "license": "ISC",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mumincelal/ngx-org-ui.git"
+    "url": "git+https://github.com/fdjlss/ngx-org-chart.git"
   },
   "bugs": {
-    "url": "https://github.com/mumincelal/ngx-org-ui/issues"
+    "url": "https://github.com/fdjlss/ngx-org-chart/issues"
   },
-  "homepage": "https://github.com/mumincelal/ngx-org-ui",
+  "homepage": "https://github.com/fdjlss/ngx-org-chart#readme",
   "peerDependencies": {
     "@angular/common": "^8.2.0",
     "@angular/core": "^8.2.0"
+  },
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
