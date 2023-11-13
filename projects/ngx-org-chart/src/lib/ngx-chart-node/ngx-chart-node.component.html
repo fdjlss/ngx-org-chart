@@ -4,8 +4,8 @@
     [ngStyle]="{ 'background-image': 'url(\''+ node?.image+'\')'}">
   </div>
   <div>
-    <div class="ngx-org-name">{{node?.name}}</div>
-    <div class="ngx-org-title">{{node?.title}}</div>
+    <div class="ngx-org-name" [innerHTML]="node?.name"></div>
+    <div class="ngx-org-title" [innerHTML]="node?.title"></div>
   </div>
 </div>
 <div ngClass="ngx-org-connector-{{direction}}" class="ngx-org-border" *ngIf="node?.childs?.length"></div>
