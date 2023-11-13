@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 
 import { INode } from '../node';
 
@@ -9,14 +9,9 @@ import { INode } from '../node';
 })
 export class NgxOrgChartComponent {
 
-  @Input()
   nodes: INode[];
-
-  @Input()
   hasParent = false;
-
-  @Input()
   direction: 'vertical' | 'horizontal' = 'vertical';
 
-  @Output() itemClick = new EventEmitter<INode>();
+  itemClick = new EventEmitter<INode>();
 }
