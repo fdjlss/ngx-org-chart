@@ -1,11 +1,11 @@
-<div ngClass="ngx-org-connector-{{direction}}" class="ngx-org-border" *ngIf="hasParent"></div>
-<div [ngClass]="node?.cssClass" class="ngx-org-box ngx-org-border ngx-org-background" (click)="itemClick.emit(node)">
+<div [class]="containerClass" class="ngx-org-border" *ngIf="hasParent"></div>
+<div [class]="node?.cssClass" class="ngx-org-box ngx-org-border ngx-org-background" (click)="itemClick.emit(node)">
   <div *ngIf="node?.image" class="ngx-org-image ngx-org-border"
-    [ngStyle]="{ 'background-image': 'url(\''+ node?.image+'\')'}">
+    [style]="{ 'background-image': 'url(\''+ node?.image+'\')'}">
   </div>
   <div>
     <div class="ngx-org-name" [innerHTML]="node?.name"></div>
     <div class="ngx-org-title" [innerHTML]="node?.title"></div>
   </div>
 </div>
-<div ngClass="ngx-org-connector-{{direction}}" class="ngx-org-border" *ngIf="node?.childs?.length"></div>
+<div [class]="containerClass" class="ngx-org-border" *ngIf="node?.childs?.length"></div>

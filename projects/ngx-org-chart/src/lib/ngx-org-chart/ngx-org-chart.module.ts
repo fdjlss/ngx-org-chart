@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { NgxChartDesignerModule } from '../ngx-chart-designer/ngx-chart-designer.module';
@@ -9,7 +8,6 @@ import { NgxOrgChartComponent } from './ngx-org-chart.component';
     NgxOrgChartComponent
   ],
   imports: [
-    CommonModule,
     NgxChartDesignerModule
   ],
   bootstrap: [NgxOrgChartComponent],
