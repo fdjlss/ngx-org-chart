@@ -1,20 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { AppRoutingModule } from './app-routing.module';
+import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgxOrgChartModule } from 'projects/ngx-org-chart/src/public-api';
-import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    // BrowserModule,
-    // AppRoutingModule,
+    BrowserModule,
+    AppRoutingModule,
     NgxOrgChartModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

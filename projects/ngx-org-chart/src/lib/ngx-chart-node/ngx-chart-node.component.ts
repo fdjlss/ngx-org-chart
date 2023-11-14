@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { INode } from '../node';
 
@@ -9,15 +9,21 @@ import { INode } from '../node';
 })
 export class NgxChartNodeComponent {
 
+  @Input()
   node: INode;
+
+  @Input()
   hasParent = false;
+
+  @Input()
   direction: 'vertical' | 'horizontal' = 'vertical';
 
-  itemClick = new EventEmitter<INode>();
+  @Output() itemClick = new EventEmitter<INode>();
 
   containerClass: string
 
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`
   }
+
 }

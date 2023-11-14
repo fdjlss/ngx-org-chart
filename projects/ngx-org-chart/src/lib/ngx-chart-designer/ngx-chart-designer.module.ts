@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { NgxChartNodeModule } from '../ngx-chart-node/ngx-chart-node.module';
 import { NgxChartDesignerComponent } from './ngx-chart-designer.component';
 
 @NgModule({
-  declarations: [
-    NgxChartDesignerComponent
-  ],
+  declarations: [NgxChartDesignerComponent],
   imports: [
+    CommonModule, 
     NgxChartNodeModule
   ],
   bootstrap: [NgxChartDesignerComponent],

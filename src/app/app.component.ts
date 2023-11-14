@@ -11,7 +11,7 @@ export class AppComponent {
       name: 'Sundar Pichai',
       cssClass: 'ngx-org-ceo',
       image: 'assets/node.svg',
-      title: 'Chief Executive Officer',
+      title: 'Chief <strong>Executive</strong> <p style="color: blue;">Officer</p>',
       childs: [
         {
           name: 'Thomas Kurian',
@@ -182,4 +182,8 @@ export class AppComponent {
       ]
     }
   ];
+
+  test(event: Event): void {
+    console.log("It works!");
+  }
 }

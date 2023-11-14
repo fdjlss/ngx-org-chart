@@ -20,8 +20,15 @@ export class NgxChartDesignerComponent {
 
   @Output() itemClick = new EventEmitter<INode>();
 
+  
+  chartNodeClass: string;
+
   @HostBinding('style.flex-direction')
   get hostClass() {
     return this.direction === 'vertical' ? 'column' : '';
+  }
+
+  constructor() {
+    this.chartNodeClass = `ngx-org-${ this.direction }`;
   }
 }
