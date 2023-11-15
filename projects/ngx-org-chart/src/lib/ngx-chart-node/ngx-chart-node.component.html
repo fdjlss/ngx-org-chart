@@ -2,7 +2,6 @@
 <div
   [class]="node?.cssClass"
   class="ngx-org-box ngx-org-border ngx-org-background"
-  (click)="itemClick.emit(node)"
 >
   <div
     class="ngx-org-image"
@@ -21,12 +20,14 @@
       *ngIf="true"
       class="ngx-org-btn ngx-org-btn-details"
       [style.background-color]="node?.color ?? node.color"
-    >See details</button>
+      (click)="detailsBtnClick.emit(node)"
+  >See details</button>
     <button 
       *ngIf="true"
       class="ngx-org-btn ngx-org-btn-ext"
       [style.background-color]="node?.color ?? node.color"
-    >External link</button>
+      (click)="extLinkClick.emit(node)"
+  >External link</button>
   </div>
 </div>
 <div *ngIf="node?.children?.length" [class]="containerClass" class="ngx-org-border"></div>

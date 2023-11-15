@@ -1,1 +1,7 @@
-<ngx-org-chart [nodes]="nodes" direction="vertical" (itemClick)="test($event)"></ngx-org-chart>
+<ngx-org-chart 
+  [nodes]="nodes" 
+  direction="vertical" 
+  (detailsBtnClick)="testDetail($event)"
+  (extLinkClick)="testExtLink($event)"
+>
+</ngx-org-chart>
