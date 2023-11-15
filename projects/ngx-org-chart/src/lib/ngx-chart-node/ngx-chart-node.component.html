@@ -5,13 +5,28 @@
   (click)="itemClick.emit(node)"
 >
   <div
-    class="ngx-org-image ngx-org-border"
+    class="ngx-org-image"
     [style]="{ 'background-image': 'url(\'' + node?.image + '\')' }"
-    [style.border-color]="node?.color ? node.color : null"
+    [style.border-color]="node?.color ?? node.color"
   ></div>
-  <div>
+  <div class="ngx-org-container">
+    <div 
+      class="ngx-org-title" 
+      [innerHTML]="node?.title"
+      [style.color]="node?.color ?? node.color"
+    ></div>
     <div class="ngx-org-name" [innerHTML]="node?.name"></div>
-    <div class="ngx-org-title" [innerHTML]="node?.title"></div>
+
+    <button 
+      *ngIf="true"
+      class="ngx-org-btn ngx-org-btn-details"
+      [style.background-color]="node?.color ?? node.color"
+    >See details</button>
+    <button 
+      *ngIf="true"
+      class="ngx-org-btn ngx-org-btn-ext"
+      [style.background-color]="node?.color ?? node.color"
+    >External link</button>
   </div>
 </div>
 <div *ngIf="node?.children?.length" [class]="containerClass" class="ngx-org-border"></div>

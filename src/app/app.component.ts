@@ -8,10 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   nodes: any = [
     {
+      title: 'Superintendent of Human Resources Management',
       name: 'Sundar Pichai',
       cssClass: 'ngx-org-ceo',
       image: 'assets/node.svg',
-      title: 'Chief Executive Officer',
+      color: '#EC206B',
+      details: [{ id: 1, description: '' }],
+      externalLink: "https://www.example.com",
       children: [
         {
           name: 'Thomas Kurian',

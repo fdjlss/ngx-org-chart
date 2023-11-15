@@ -4,7 +4,27 @@
 }
 
 .ngx-org-box {
-  cursor: pointer;
+  // display: flex;
+  // align-items: center;
+  max-width: 10em;
+}
+
+.ngx-org-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.ngx-org-container > * {
+  margin: 5px auto;
+}
+
+.ngx-org-btn {
+  cursor: pointer;
+  min-width: 8em;
+  padding: 5px 10px;
+  border: 2px solid;
+  border-radius: 12px;
+  background-color: darkblue; 
+  color: white; 
 }
