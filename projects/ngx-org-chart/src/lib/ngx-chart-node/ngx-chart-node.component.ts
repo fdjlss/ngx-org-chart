@@ -20,7 +20,7 @@ export class NgxChartNodeComponent {
 
   @Output() itemClick = new EventEmitter<INode>();
 
-  containerClass: string
+  containerClass: string;
 
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`

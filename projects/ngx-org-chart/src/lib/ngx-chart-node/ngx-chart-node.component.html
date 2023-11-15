@@ -1,11 +1,17 @@
 <div [class]="containerClass" class="ngx-org-border" *ngIf="hasParent"></div>
-<div [class]="node?.cssClass" class="ngx-org-box ngx-org-border ngx-org-background" (click)="itemClick.emit(node)">
-  <div *ngIf="node?.image" class="ngx-org-image ngx-org-border"
-    [style]="{ 'background-image': 'url(\''+ node?.image+'\')'}">
-  </div>
+<div
+  [class]="node?.cssClass"
+  class="ngx-org-box ngx-org-border ngx-org-background"
+  (click)="itemClick.emit(node)"
+>
+  <div
+    class="ngx-org-image ngx-org-border"
+    [style]="{ 'background-image': 'url(\'' + node?.image + '\')' }"
+    [style.border-color]="node?.color ? node.color : null"
+  ></div>
   <div>
     <div class="ngx-org-name" [innerHTML]="node?.name"></div>
     <div class="ngx-org-title" [innerHTML]="node?.title"></div>
   </div>
 </div>
-<div [class]="containerClass" class="ngx-org-border" *ngIf="node?.childs?.length"></div>
+<div *ngIf="node?.children?.length" [class]="containerClass" class="ngx-org-border"></div>

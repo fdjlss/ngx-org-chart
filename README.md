@@ -24,7 +24,7 @@ $ npm install @fdjlss/ngx-org-chart
 |cssClass|`string`|Custom css class for the node
 |image|`string`|Image of the node
 |title|`string`|The node's title
-|childs|`Node[]`|The array of child nodes
+|children|`Node[]`|The array of child nodes
 
 ### `app.module.ts`
 ```js
@@ -71,7 +71,7 @@ export class AppComponent {
       cssClass: 'ngx-org-ceo',
       image: '',
       title: 'Chief Executive Officer',
-      childs: [
+      children: [
         {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
@@ -83,27 +83,27 @@ export class AppComponent {
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, YouTube',
-          childs: [
+          children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
               title: 'Global Head of Business Operations',
-              childs: []
+              children: []
             },
             {
               name: 'Tara Walpert Levy',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Agency and Brand Solutions',
-              childs: []
+              children: []
             },
             {
               name: 'Ariel Bardin',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Product Management',
-              childs: []
+              children: []
             }
           ]
         },
@@ -112,13 +112,13 @@ export class AppComponent {
           cssClass: 'ngx-org-head',
           image: 'assets/node.svg',
           title: 'Head of Artificial Intelligence',
-          childs: [
+          children: [
             {
               name: 'David Feinberg',
               cssClass: 'ngx-org-ceo',
               image: 'assets/node.svg',
               title: 'CEO, Google Health',
-              childs: []
+              children: []
             }
           ]
         }
@@ -129,7 +129,7 @@ export class AppComponent {
       cssClass: 'ngx-org-ceo',
       image: 'assets/node.svg',
       title: 'Chief Executive Officer',
-      childs: [
+      children: [
         {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
@@ -141,27 +141,27 @@ export class AppComponent {
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, YouTube',
-          childs: [
+          children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
               title: 'Global Head of Business Operations',
-              childs: []
+              children: []
             },
             {
               name: 'Tara Walpert Levy',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Agency and Brand Solutions',
-              childs: []
+              children: []
             },
             {
               name: 'Ariel Bardin',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Product Management',
-              childs: []
+              children: []
             }
           ]
         },
@@ -170,13 +170,13 @@ export class AppComponent {
           cssClass: 'ngx-org-head',
           image: 'assets/node.svg',
           title: 'Head of Artificial Intelligence',
-          childs: [
+          children: [
             {
               name: 'David Feinberg',
               cssClass: 'ngx-org-ceo',
               image: 'assets/node.svg',
               title: 'CEO, Google Health',
-              childs: []
+              children: []
             }
           ]
         }
@@ -187,7 +187,7 @@ export class AppComponent {
       cssClass: 'ngx-org-ceo',
       image: 'assets/node.svg',
       title: 'Chief Executive Officer',
-      childs: [
+      children: [
         {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
@@ -199,27 +199,27 @@ export class AppComponent {
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, YouTube',
-          childs: [
+          children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
               title: 'Global Head of Business Operations',
-              childs: []
+              children: []
             },
             {
               name: 'Tara Walpert Levy',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Agency and Brand Solutions',
-              childs: []
+              children: []
             },
             {
               name: 'Ariel Bardin',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Product Management',
-              childs: []
+              children: []
             }
           ]
         },
@@ -228,13 +228,13 @@ export class AppComponent {
           cssClass: 'ngx-org-head',
           image: 'assets/node.svg',
           title: 'Head of Artificial Intelligence',
-          childs: [
+          children: [
             {
               name: 'David Feinberg',
               cssClass: 'ngx-org-ceo',
               image: 'assets/node.svg',
               title: 'CEO, Google Health',
-              childs: []
+              children: []
             }
           ]
         }

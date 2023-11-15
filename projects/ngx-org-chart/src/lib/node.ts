@@ -3,7 +3,8 @@ export interface INode {
   cssClass: string;
   image: string;
   title: string;
-  childs: INode[];
+  color?: string;
+  children: INode[];
 }
 
 export class Node implements INode {
@@ -11,7 +12,8 @@ export class Node implements INode {
   cssClass: string;
   image: string;
   title: string;
-  childs: Node[];
+  color?: string;
+  children: Node[];
   parent?: Node;
 
   constructor(structure: string[], parent?: Node) {
@@ -21,7 +23,7 @@ export class Node implements INode {
     const titleMatch = name.match(/\(([^)]+)\)/);
     this.title = titleMatch && titleMatch[1].trim();
 
-    this.childs = reports.map(r => r.substring(1))
+    this.children = reports.map(r => r.substring(1))
       .reduce((previous, current) => {
         if (!current.startsWith(' ')) {
           previous.push([]);

@@ -19,7 +19,6 @@ export class NgxChartDesignerComponent {
   direction: 'vertical' | 'horizontal' = 'vertical';
 
   @Output() itemClick = new EventEmitter<INode>();
-
   
   chartNodeClass: string;
 
