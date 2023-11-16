@@ -4,7 +4,8 @@
   [node]="node"
   [hasParent]="hasParent"
   [direction]="direction"
-  (itemClick)="itemClick.emit($event)"
+  (detailsBtnClick)="detailsBtnClick.emit($event)"
+  (extLinkClick)="extLinkClick.emit($event)"
 >
 </ngx-chart-node>
 
@@ -20,7 +21,8 @@
         [node]="childNode"
         [hasParent]="true"
         [direction]="direction"
-        (itemClick)="itemClick.emit($event)"
+        (detailsBtnClick)="detailsBtnClick.emit($event)"
+        (extLinkClick)="extLinkClick.emit($event)"
       >
       </ngx-chart-designer>
     </div>

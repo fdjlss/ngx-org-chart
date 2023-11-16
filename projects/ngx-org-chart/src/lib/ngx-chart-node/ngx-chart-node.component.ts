@@ -26,5 +26,4 @@ export class NgxChartNodeComponent {
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`
   }
-
 }

@@ -18,5 +18,6 @@ export class NgxOrgChartComponent {
   @Input()
   direction: 'vertical' | 'horizontal' = 'vertical';
 
-  @Output() itemClick = new EventEmitter<INode>();
+  @Output() detailsBtnClick = new EventEmitter<INode>();
+  @Output() extLinkClick = new EventEmitter<INode>();
 }

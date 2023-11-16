@@ -186,11 +186,11 @@ export class AppComponent {
     }
   ];
 
-  testDetail(event: Event): void {
-    console.log("It works!");
+  testDetail(event: any) {
+    console.log("It works!", event);
   }
 
-  testExtLink(event: Event): void {
-    console.log("It works!");
+  testExtLink(event) {
+    console.log("It works!", event);
   }
 }
