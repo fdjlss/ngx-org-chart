@@ -9,14 +9,11 @@ import { INode } from '../node';
 })
 export class NgxOrgChartComponent {
 
-  @Input()
-  nodes: INode[];
-
-  @Input()
-  hasParent = false;
-
-  @Input()
-  direction: 'vertical' | 'horizontal' = 'vertical';
+  @Input() nodes: INode[];
+  @Input() hasParent = false;
+  @Input() direction: 'vertical' | 'horizontal' = 'vertical';
+  @Input() detailsBtnTitle = "See details";
+  @Input() linkBtnTitle = "External link";
 
   @Output() detailsBtnClick = new EventEmitter<INode>();
   @Output() linkBtnClick = new EventEmitter<INode>();

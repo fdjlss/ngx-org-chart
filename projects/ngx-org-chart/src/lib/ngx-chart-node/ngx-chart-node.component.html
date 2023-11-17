@@ -22,7 +22,7 @@
       [style.background-color]="node?.color ?? node.color"
       (click)="detailsBtnClick.emit(node)"
     >
-      See details
+      {{ detailsBtnTitle }}
     </button>
     <button
       *ngIf="node?.link"
@@ -30,7 +30,7 @@
       [style.background-color]="node?.color ?? node.color"
       (click)="linkBtnClick.emit(node)"
     >
-      External link
+      {{ linkBtnTitle }}
     </button>
   </div>
 </div>

@@ -9,14 +9,11 @@ import { INode } from '../node';
 })
 export class NgxChartNodeComponent {
 
-  @Input()
-  node: INode;
-
-  @Input()
-  hasParent = false;
-
-  @Input()
-  direction: 'vertical' | 'horizontal' = 'vertical';
+  @Input() node: INode;
+  @Input() hasParent = false;
+  @Input() direction: 'vertical' | 'horizontal' = 'vertical';
+  @Input() detailsBtnTitle: string;
+  @Input() linkBtnTitle: string;
 
   @Output() detailsBtnClick = new EventEmitter<INode>();
   @Output() linkBtnClick = new EventEmitter<INode>();

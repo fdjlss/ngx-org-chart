@@ -1,13 +1,13 @@
-export interface INode {
-  name: string;
-  cssClass: string;
-  image: string;
-  title: string;
-  color?: string;
-  details?: Array<any>;
-  link?: string;
-  children: INode[];
-}
+  export interface INode {
+    name: string;
+    cssClass: string;
+    image: string;
+    title: string;
+    color?: string;
+    details?: Array<any>;
+    link?: string;
+    children: INode[];
+  }
 
 export class Node implements INode {
   name: string;

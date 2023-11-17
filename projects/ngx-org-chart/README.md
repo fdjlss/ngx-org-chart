@@ -1,4 +1,9 @@
-# ngx-org-chart
+# @fdjlss/ngx-org-chart
+
+Based off of mumincelal's original [ngx-org-chart](https://www.npmjs.com/package/ngx-org-chart).
+README incomplete beyond this point. Some features may be broken, missing, or left undocumented.
+
+---
 
 The `ngx-org-chart` creates hierarchical organization chart.
 You can create hierarchical organization charts with it.
