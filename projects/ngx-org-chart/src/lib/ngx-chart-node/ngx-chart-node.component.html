@@ -9,25 +9,33 @@
     [style.border-color]="node?.color ?? node.color"
   ></div>
   <div class="ngx-org-container">
-    <div 
-      class="ngx-org-title" 
+    <div
+      class="ngx-org-title"
       [innerHTML]="node?.title"
       [style.color]="node?.color ?? node.color"
     ></div>
     <div class="ngx-org-name" [innerHTML]="node?.name"></div>
 
-    <button 
-      *ngIf="true"
+    <button
+      *ngIf="node?.details"
       class="ngx-org-btn ngx-org-btn-details"
       [style.background-color]="node?.color ?? node.color"
-      (click)="detailsBtnClick.emit(node)"  
-    >See details</button>
-    <button 
-      *ngIf="true"
+      (click)="detailsBtnClick.emit(node)"
+    >
+      See details
+    </button>
+    <button
+      *ngIf="node?.link"
       class="ngx-org-btn ngx-org-btn-ext"
       [style.background-color]="node?.color ?? node.color"
-      (click)="extLinkClick.emit(node)"
-  >External link</button>
+      (click)="linkBtnClick.emit(node)"
+    >
+      External link
+    </button>
   </div>
 </div>
-<div *ngIf="node?.children?.length" [class]="containerClass" class="ngx-org-border"></div>
+<div
+  *ngIf="node?.children?.length"
+  [class]="containerClass"
+  class="ngx-org-border"
+></div>

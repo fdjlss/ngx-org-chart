@@ -14,7 +14,7 @@ export class AppComponent {
       image: 'assets/node.svg',
       color: '#EC206B',
       details: [{ id: 1, description: '' }],
-      externalLink: "https://www.example.com",
+      link: "https://www.example.com",
       children: [
         {
           name: 'Thomas Kurian',

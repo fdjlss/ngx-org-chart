@@ -1,30 +1,16 @@
-<ngx-chart-node
-  *ngIf="node"
-  [class]="chartNodeClass"
-  [node]="node"
-  [hasParent]="hasParent"
-  [direction]="direction"
-  (detailsBtnClick)="detailsBtnClick.emit($event)"
-  (extLinkClick)="extLinkClick.emit($event)"
->
+<ngx-chart-node *ngIf="node" [class]="chartNodeClass" [node]="node" [hasParent]="hasParent" [direction]="direction" (detailsBtnClick)="detailsBtnClick.emit($event)" (linkBtnClick)="linkBtnClick.emit($event)">
 </ngx-chart-node>
 
 <div *ngIf="node?.children?.length" class="ngx-org-reports-{{ direction }} ngx-org-reports">
-  <ng-container *ngFor="let childNode of node?.children; first as isFirst; last as isLast">
-    <div class="ngx-org-org-container ngx-org-org-container-{{ direction }}">
-      <div class="ngx-org-connector-container ngx-org-connector-container-{{ direction }}">
-        <div class="ngx-org-connector ngx-org-border" [style.border-color]="isFirst ? 'transparent' : ''"></div>
-        <div class="ngx-org-border"></div>
-        <div class="ngx-org-connector ngx-org-border" [style.border-color]="isLast ? 'transparent' : ''"></div>
-      </div>
-      <ngx-chart-designer
-        [node]="childNode"
-        [hasParent]="true"
-        [direction]="direction"
-        (detailsBtnClick)="detailsBtnClick.emit($event)"
-        (extLinkClick)="extLinkClick.emit($event)"
-      >
-      </ngx-chart-designer>
-    </div>
-  </ng-container>
+    <ng-container *ngFor="let childNode of node?.children; first as isFirst; last as isLast">
+        <div class="ngx-org-org-container ngx-org-org-container-{{ direction }}">
+            <div class="ngx-org-connector-container ngx-org-connector-container-{{ direction }}">
+                <div class="ngx-org-connector ngx-org-border" [style.border-color]="isFirst ? 'transparent' : ''"></div>
+                <div class="ngx-org-border"></div>
+                <div class="ngx-org-connector ngx-org-border" [style.border-color]="isLast ? 'transparent' : ''"></div>
+            </div>
+            <ngx-chart-designer [node]="childNode" [hasParent]="true" [direction]="direction" (detailsBtnClick)="detailsBtnClick.emit($event)" (linkBtnClick)="linkBtnClick.emit($event)">
+            </ngx-chart-designer>
+        </div>
+    </ng-container>
 </div>

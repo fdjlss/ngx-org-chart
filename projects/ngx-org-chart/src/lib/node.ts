@@ -4,6 +4,8 @@ export interface INode {
   image: string;
   title: string;
   color?: string;
+  details?: Array<any>;
+  link?: string;
   children: INode[];
 }
 
@@ -13,6 +15,8 @@ export class Node implements INode {
   image: string;
   title: string;
   color?: string;
+  details?: Array<any>;
+  link?: string;
   children: Node[];
   parent?: Node;
 
