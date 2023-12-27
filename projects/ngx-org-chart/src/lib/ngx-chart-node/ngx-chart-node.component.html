@@ -1,7 +1,12 @@
-<div [class]="containerClass" class="ngx-org-border" *ngIf="hasParent"></div>
 <div
-  [class]="node?.cssClass"
+  *ngIf="hasParent"
+  class="ngx-org-border"
+  [class]="containerClass"
+  [style.height]="connectorToParentHeight"
+></div>
+<div
   class="ngx-org-box ngx-org-border ngx-org-background"
+  [class]="node?.cssClass"
 >
   <div
     class="ngx-org-image"
@@ -36,6 +41,6 @@
 </div>
 <div
   *ngIf="node?.children?.length"
-  [class]="containerClass"
   class="ngx-org-border"
+  [class]="containerClass"
 ></div>

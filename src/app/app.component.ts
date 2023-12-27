@@ -20,33 +20,33 @@ export class AppComponent {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
-          title: 'CEO, Google Cloud',
+          title: 'Superintendent',
         },
         {
           name: 'Susan Wojcicki',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
-          title: 'CEO, YouTube',
+          title: 'Boss, Google',
           children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
-              title: 'Global Head of Business Operations',
+              title: 'Superintendente de la Chamba',
               children: []
             },
             {
               name: 'Tara Walpert Levy',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
-              title: 'VP, Agency and Brand Solutions',
+              title: 'Jefe de la Chamba',
               children: []
             },
             {
               name: 'Ariel Bardin',
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
-              title: 'VP, Product Management',
+              title: 'Ingeniero de la Chamba',
               children: []
             }
           ]

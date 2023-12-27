@@ -10,7 +10,8 @@ import { INode } from '../node';
 export class NgxChartNodeComponent {
 
   @Input() node: INode;
-  @Input() hasParent = false;
+  @Input() hasParent: boolean;
+  @Input() hasInnerStructure: boolean;
   @Input() direction: 'vertical' | 'horizontal' = 'vertical';
   @Input() detailsBtnTitle: string;
   @Input() linkBtnTitle: string;
@@ -19,8 +20,22 @@ export class NgxChartNodeComponent {
   @Output() linkBtnClick = new EventEmitter<INode>();
 
   containerClass: string;
+  connectorToParentHeight: string = "3em";
+  privilegedOrderedPositions = ["super", "jefe"];
 
   constructor() {
-    this.containerClass = `ngx-org-connector-${this.direction}`
+    this.containerClass = `ngx-org-connector-${this.direction}`;
   }
+  
+  ngOnInit() {
+    if (this.hasInnerStructure) {
+      const nodePosition = this.node.title.toLowerCase();
+      const indexOfOrderedPosition = this.privilegedOrderedPositions.findIndex(pos => nodePosition.includes(pos));
+      if (indexOfOrderedPosition !== -1) {
+        this.connectorToParentHeight = `${indexOfOrderedPosition*1.5}em`;
+      }
+    }
+  }
+
+
 }

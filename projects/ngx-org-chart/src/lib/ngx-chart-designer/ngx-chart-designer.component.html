@@ -3,6 +3,7 @@
   [class]="chartNodeClass"
   [node]="node"
   [hasParent]="hasParent"
+  [hasInnerStructure]="hasInnerStructure"
   [direction]="direction"
   [detailsBtnTitle]="detailsBtnTitle"
   [linkBtnTitle]="linkBtnTitle"
@@ -19,11 +20,7 @@
     *ngFor="let childNode of node?.children; first as isFirst; last as isLast"
   >
     <div class="ngx-org-org-container ngx-org-org-container-{{ direction }}">
-      <div
-        class="ngx-org-connector-container ngx-org-connector-container-{{
-          direction
-        }}"
-      >
+      <div class="ngx-org-connector-container ngx-org-connector-container-{{ direction }}">
         <div
           class="ngx-org-connector ngx-org-border"
           [style.border-color]="isFirst ? 'transparent' : ''"
@@ -37,6 +34,7 @@
       <ngx-chart-designer
         [node]="childNode"
         [hasParent]="true"
+        [hasInnerStructure]="hasInnerStructure"
         [direction]="direction"
         [detailsBtnTitle]="detailsBtnTitle"
         [linkBtnTitle]="linkBtnTitle"

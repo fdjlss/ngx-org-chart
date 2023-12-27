@@ -11,6 +11,7 @@ export class NgxChartDesignerComponent {
 
   @Input() node: INode;
   @Input() hasParent = false;
+  @Input() hasInnerStructure: boolean;
   @Input() direction: 'vertical' | 'horizontal' = 'vertical';
   @Input() detailsBtnTitle: string;
   @Input() linkBtnTitle: string;

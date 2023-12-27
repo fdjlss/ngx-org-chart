@@ -10,7 +10,7 @@ import { INode } from '../node';
 export class NgxOrgChartComponent {
 
   @Input() nodes: INode[];
-  @Input() hasParent = false;
+  @Input() hasInnerStructure = false;
   @Input() direction: 'vertical' | 'horizontal' = 'vertical';
   @Input() detailsBtnTitle = "See details";
   @Input() linkBtnTitle = "External link";

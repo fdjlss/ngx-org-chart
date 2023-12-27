@@ -1,6 +1,6 @@
 # @fdjlss/ngx-org-chart
 
-Based off of mumincelal's original [ngx-org-chart](https://www.npmjs.com/package/ngx-org-chart).
+Based off of mumincelal's original [ngx-org-chart](https://www.npmjs.com/package/ngx-org-chart).\
 README incomplete beyond this point. Some features may be broken, missing, or left undocumented.
 
 ---
