@@ -20,8 +20,8 @@ export class NgxChartNodeComponent {
   @Output() linkBtnClick = new EventEmitter<INode>();
 
   containerClass: string;
-  connectorToParentHeight: string = "3em";
-  privilegedOrderedPositions = ["super", "jefe"];
+  connectorToParentHeight = "4em";
+  privilegedOrderedPositions = ["gerente", "super", "jefe"];
 
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`;

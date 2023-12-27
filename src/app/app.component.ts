@@ -26,7 +26,7 @@ export class AppComponent {
           name: 'Susan Wojcicki',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
-          title: 'Boss, Google',
+          title: 'Gerente, Google',
           children: [
             {
               name: 'Beau Avril',
