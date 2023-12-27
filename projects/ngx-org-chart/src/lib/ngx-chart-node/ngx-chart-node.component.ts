@@ -20,7 +20,7 @@ export class NgxChartNodeComponent {
   @Output() linkBtnClick = new EventEmitter<INode>();
 
   containerClass: string;
-  connectorToParentHeight = "4em";
+  connectorToParentHeight = "5em";
   privilegedOrderedPositions = ["gerente", "super", "jefe"];
 
   constructor() {
@@ -32,7 +32,7 @@ export class NgxChartNodeComponent {
       const nodePosition = this.node.title.toLowerCase();
       const indexOfOrderedPosition = this.privilegedOrderedPositions.findIndex(pos => nodePosition.includes(pos));
       if (indexOfOrderedPosition !== -1) {
-        this.connectorToParentHeight = `${indexOfOrderedPosition*1.5}em`;
+        this.connectorToParentHeight = `${indexOfOrderedPosition*2}em`;
       }
     }
   }
