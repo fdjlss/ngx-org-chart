@@ -27,7 +27,7 @@ export class NgxChartNodeComponent {
   }
   
   ngOnInit() {
-    if (this.hasInnerStructure) {
+    if (this.hasInnerStructure && this.node.level) {
       this.connectorToParentHeight = `${this.node.level*2}em`;
     }
   }

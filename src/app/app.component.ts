@@ -15,7 +15,7 @@ export class AppComponent {
       color: '#EC206B',
       details: [{ id: 1, description: '' }],
       link: "https://www.example.com",
-      level: 3,
+      // level: 3,
       children: [
         {
           name: 'Thomas Kurian',
