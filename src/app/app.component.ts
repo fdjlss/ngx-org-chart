@@ -15,24 +15,28 @@ export class AppComponent {
       color: '#EC206B',
       details: [{ id: 1, description: '' }],
       link: "https://www.example.com",
+      level: 3,
       children: [
         {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'Superintendent',
+          level: 3
         },
         {
           name: 'Susan Wojcicki',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'Gerente, Google',
+          level: 3,
           children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
               title: 'Superintendente de la Chamba',
+              level: 3,
               children: []
             },
             {
@@ -40,6 +44,7 @@ export class AppComponent {
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'Jefe de la Chamba',
+              level: 4,
               children: []
             },
             {
@@ -47,6 +52,7 @@ export class AppComponent {
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'Ingeniero de la Chamba',
+              level: 4,
               children: []
             }
           ]
@@ -56,12 +62,14 @@ export class AppComponent {
           cssClass: 'ngx-org-head',
           image: 'assets/node.svg',
           title: 'Head of Artificial Intelligence',
+          level: 3,
           children: [
             {
               name: 'David Feinberg',
               cssClass: 'ngx-org-ceo',
               image: 'assets/node.svg',
               title: 'CEO, Google Health',
+              level: 2,
               children: []
             }
           ]
@@ -73,24 +81,28 @@ export class AppComponent {
       cssClass: 'ngx-org-ceo',
       image: 'assets/node.svg',
       title: 'Chief Executive Officer',
+      level: 1,
       children: [
         {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, Google Cloud',
+          level: 2
         },
         {
           name: 'Susan Wojcicki',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, YouTube',
+          level: 2,
           children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
               title: 'Global Head of Business Operations',
+              level: 3,
               children: []
             },
             {
@@ -98,6 +110,7 @@ export class AppComponent {
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Agency and Brand Solutions',
+              level: 4,
               children: []
             },
             {
@@ -105,6 +118,7 @@ export class AppComponent {
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Product Management',
+              level: 4,
               children: []
             }
           ]
@@ -114,12 +128,14 @@ export class AppComponent {
           cssClass: 'ngx-org-head',
           image: 'assets/node.svg',
           title: 'Head of Artificial Intelligence',
+          level: 3,
           children: [
             {
               name: 'David Feinberg',
               cssClass: 'ngx-org-ceo',
               image: 'assets/node.svg',
               title: 'CEO, Google Health',
+              level: 2,
               children: []
             }
           ]
@@ -131,24 +147,28 @@ export class AppComponent {
       cssClass: 'ngx-org-ceo',
       image: 'assets/node.svg',
       title: 'Chief Executive Officer',
+      level: 1,
       children: [
         {
           name: 'Thomas Kurian',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, Google Cloud',
+          level: 2
         },
         {
           name: 'Susan Wojcicki',
           cssClass: 'ngx-org-ceo',
           image: 'assets/node.svg',
           title: 'CEO, YouTube',
+          level: 2,
           children: [
             {
               name: 'Beau Avril',
               cssClass: 'ngx-org-head',
               image: 'assets/node.svg',
               title: 'Global Head of Business Operations',
+              level: 3,
               children: []
             },
             {
@@ -156,6 +176,7 @@ export class AppComponent {
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Agency and Brand Solutions',
+              level: 4,
               children: []
             },
             {
@@ -163,6 +184,7 @@ export class AppComponent {
               cssClass: 'ngx-org-vp',
               image: 'assets/node.svg',
               title: 'VP, Product Management',
+              level: 4,
               children: []
             }
           ]
@@ -172,12 +194,14 @@ export class AppComponent {
           cssClass: 'ngx-org-head',
           image: 'assets/node.svg',
           title: 'Head of Artificial Intelligence',
+          level: 3,
           children: [
             {
               name: 'David Feinberg',
               cssClass: 'ngx-org-ceo',
               image: 'assets/node.svg',
               title: 'CEO, Google Health',
+              level: 2,
               children: []
             }
           ]
@@ -185,6 +209,7 @@ export class AppComponent {
       ]
     }
   ];
+  
 
   testDetail(event: any) {
     console.log("It works!", event);

@@ -21,7 +21,6 @@ export class NgxChartNodeComponent {
 
   containerClass: string;
   connectorToParentHeight = "5em";
-  privilegedOrderedPositions = ["gerente", "super", "jefe"];
 
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`;
@@ -29,11 +28,7 @@ export class NgxChartNodeComponent {
   
   ngOnInit() {
     if (this.hasInnerStructure) {
-      const nodePosition = this.node.title.toLowerCase();
-      const indexOfOrderedPosition = this.privilegedOrderedPositions.findIndex(pos => nodePosition.includes(pos));
-      if (indexOfOrderedPosition !== -1) {
-        this.connectorToParentHeight = `${indexOfOrderedPosition*2}em`;
-      }
+      this.connectorToParentHeight = `${this.node.level*2}em`;
     }
   }
 
