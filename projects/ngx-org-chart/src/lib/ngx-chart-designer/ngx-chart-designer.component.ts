@@ -14,7 +14,6 @@ export class NgxChartDesignerComponent {
   @Input() hasInnerStructure: boolean;
   @Input() direction: 'vertical' | 'horizontal' = 'vertical';
   @Input() detailsBtnTitle: string;
-  @Input() linkBtnTitle: string;
 
   @Output() detailsBtnClick = new EventEmitter<INode>();
   @Output() linkBtnClick = new EventEmitter<INode>();

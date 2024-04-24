@@ -7,7 +7,7 @@
     details?: Array<any>;
     link?: string;
     children: INode[];
-    level?: number;
+    heightFactor?: number;
   }
 
 export class Node implements INode {
@@ -19,7 +19,7 @@ export class Node implements INode {
   details?: Array<any>;
   link?: string;
   children: Node[];
-  level?: number;
+  heightFactor?: number;
   parent?: Node;
 
   constructor(structure: string[], parent?: Node) {

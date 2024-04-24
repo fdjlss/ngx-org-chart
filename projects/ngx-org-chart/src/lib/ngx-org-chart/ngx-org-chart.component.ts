@@ -13,7 +13,6 @@ export class NgxOrgChartComponent {
   @Input() hasInnerStructure = false;
   @Input() direction: 'vertical' | 'horizontal' = 'vertical';
   @Input() detailsBtnTitle = "See details";
-  @Input() linkBtnTitle = "External link";
 
   @Output() detailsBtnClick = new EventEmitter<INode>();
   @Output() linkBtnClick = new EventEmitter<INode>();

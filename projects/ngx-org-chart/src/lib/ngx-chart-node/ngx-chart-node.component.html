@@ -14,29 +14,29 @@
     [style.border-color]="node?.color ?? node.color"
   ></div>
   <div class="ngx-org-container">
-    <div
-      class="ngx-org-title"
-      [innerHTML]="node?.title"
-      [style.color]="node?.color ?? node.color"
-    ></div>
+    <div class="ngx-org-title" [innerHTML]="node?.title" [style.color]="node?.color ?? node.color"></div>
     <div class="ngx-org-name" [innerHTML]="node?.name"></div>
 
-    <button
-      *ngIf="node?.details"
-      class="ngx-org-btn ngx-org-btn-details"
-      [style.background-color]="node?.color ?? node.color"
-      (click)="detailsBtnClick.emit(node)"
-    >
-      {{ detailsBtnTitle }}
-    </button>
-    <button
-      *ngIf="node?.link"
-      class="ngx-org-btn ngx-org-btn-ext"
-      [style.background-color]="node?.color ?? node.color"
-      (click)="linkBtnClick.emit(node)"
-    >
-      {{ linkBtnTitle }}
-    </button>
+    <div class="button-container">
+      <button
+        *ngIf="node?.details"
+        class="ngx-org-btn ngx-org-btn-details"
+        [style.background-color]="node?.color ?? node.color"
+        (click)="detailsBtnClick.emit(node)"
+      >
+        {{ detailsBtnTitle }} 
+      </button>
+  
+      <button
+        *ngIf="node?.link"
+        class="ngx-org-btn ngx-org-btn-icon"
+        [style.background-color]="node?.color ?? node.color"
+        (click)="linkBtnClick.emit(node)"
+      >
+        <users-icon class="users-icon"/>
+      </button>
+    </div>
+
   </div>
 </div>
 <div

@@ -4,7 +4,11 @@
 }
 
 .ngx-org-box {
-  max-width: 14em;
+  max-width: 15em;
+  height: 16em;
+  box-sizing: border-box;
+  overflow: overlay;
+  position: relative; /* Add this line */
 }
 
 .ngx-org-container {
@@ -13,17 +17,47 @@
   align-items: center;
 }
 
-.ngx-org-container > * {
-  margin: 2px auto;
+// .ngx-org-container > * {
+//   margin: 2px auto;
+// }
+
+.ngx-org-title,
+.ngx-org-name,
+.button-container {
+  flex: 1; /* Change flex value */
+}
+.ngx-org-title,
+.ngx-org-name {
+  margin: 0.3em 0; /* Add margin for spacing */
 }
 
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Change position to absolute */
+  bottom: 1em; /* Position it at the bottom */
+  width: 100%; /* Make it full width of the container */
+}
 .ngx-org-btn {
   cursor: pointer;
-  min-width: 8em;
-  padding: 5px 10px;
-  border: 2px solid;
-  border-radius: 12px;
-  background-color: darkblue; 
   color: white; 
   font-size: 1rem;
+  height: 2.5em;  /* Set a specific height */
+  border: 2px solid;
+  border-radius: 12px;
+  &-details {
+    min-width: 8em;
+    padding: 5px 10px;
+    background-color: darkblue; 
+  }
+  &-icon {
+    min-width: 2.7em;
+    background-color: darkblue;
+    padding: 5px; /* Adjust padding if necessary */
+  }
+}
+.users-icon {
+  fill: white;
 }

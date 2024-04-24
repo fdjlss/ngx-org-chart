@@ -14,21 +14,27 @@ export class NgxChartNodeComponent {
   @Input() hasInnerStructure: boolean;
   @Input() direction: 'vertical' | 'horizontal' = 'vertical';
   @Input() detailsBtnTitle: string;
-  @Input() linkBtnTitle: string;
 
   @Output() detailsBtnClick = new EventEmitter<INode>();
   @Output() linkBtnClick = new EventEmitter<INode>();
 
   containerClass: string;
-  connectorToParentHeight = "5em";
+  connectorToParentHeight = "1em";
+  maxHeightEm = 19.2;
+
+  // factor 1 -> height 18.2 (0.1+0.1 + 1+1+1 + 15)
+  // factor 2 -> height 18.2*2 - 1
+  // factor 3 -> height 18.2*3 - 2
 
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`;
   }
   
   ngOnInit() {
-    if (this.hasInnerStructure && this.node.level) {
-      this.connectorToParentHeight = `${this.node.level*2}em`;
+    if (this.hasInnerStructure && this.node.heightFactor) {
+      let newHeight = this.node.heightFactor * this.maxHeightEm;
+      if (this.node.heightFactor >= 2) newHeight -= this.node.heightFactor-1;
+      this.connectorToParentHeight = `${newHeight}em`;
     }
   }
 

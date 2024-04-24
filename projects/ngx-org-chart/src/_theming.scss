@@ -12,7 +12,8 @@
   }
 
   &-border {
-    border: 1px solid darkgrey;
+    border: 0.1em solid darkgrey;
+    box-sizing: border-box;
   }
 
   &-box {
