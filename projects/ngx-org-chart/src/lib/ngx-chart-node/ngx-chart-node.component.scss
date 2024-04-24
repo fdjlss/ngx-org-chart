@@ -4,7 +4,7 @@
 }
 
 .ngx-org-box {
-  max-width: 15em;
+  width: 15em;
   height: 16em;
   box-sizing: border-box;
   overflow: overlay;
@@ -17,16 +17,14 @@
   align-items: center;
 }
 
-// .ngx-org-container > * {
-//   margin: 2px auto;
-// }
-
 .ngx-org-title,
 .ngx-org-name,
 .button-container {
   flex: 1; /* Change flex value */
 }
-.ngx-org-title,
+.ngx-org-title {
+  margin-top: 0.5em;
+}
 .ngx-org-name {
   margin: 0.3em 0; /* Add margin for spacing */
 }
@@ -60,4 +58,29 @@
 }
 .users-icon {
   fill: white;
+}
+
+.ngx-org {
+  &-image {
+    background-repeat: round;
+    width: 4em;
+    height: 4em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.25em;
+    border: 3px solid darkgrey;
+    margin: auto;
+    margin-top: 4px;
+  }
+  &-title {
+    font-family: system-ui;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  &-name {
+    font-family: system-ui;
+    text-align: center;
+    margin-bottom: 8px !important;
+  }
 }

@@ -22,9 +22,9 @@ export class NgxChartNodeComponent {
   connectorToParentHeight = "1em";
   maxHeightEm = 19.2;
 
-  // factor 1 -> height 18.2 (0.1+0.1 + 1+1+1 + 15)
-  // factor 2 -> height 18.2*2 - 1
-  // factor 3 -> height 18.2*3 - 2
+  // factor 1 -> height 19.2 (0.1+0.1 + 1+1+1 + 15)
+  // factor 2 -> height 19.2*2 - 1
+  // factor 3 -> height 19.2*3 - 2
 
   constructor() {
     this.containerClass = `ngx-org-connector-${this.direction}`;
